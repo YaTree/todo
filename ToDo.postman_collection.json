@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "4abc2970-3e9b-41c8-984f-b49d1ff2ccae",
+		"name": "ToDo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18164484",
+		"_collection_link": ""
+	},
+	"item": [
+		{
+			"name": "Get All ToDos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:30000/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30000",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Notifcations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:30001/notifications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30001",
+					"path": [
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ToDo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:30000/todos/6490648ac787fffe1b8af8eb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30000",
+					"path": [
+						"todos",
+						"6490648ac787fffe1b8af8eb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete ToDo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:30000/todos/6490648ac787fffe1b8af8eb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30000",
+					"path": [
+						"todos",
+						"6490648ac787fffe1b8af8eb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create ToDo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"hehe\",\n    \"description\": \"dont foreget to check my To Do project\",\n    \"deadlineAt\": \"today at 18.00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:30000/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30000",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sent Notifcation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"hehe\",\n    \"body\": \"dont foreget to check my To Do project\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:30001/notifications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30001",
+					"path": [
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update ToDo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"6490648ac787fffe1b8af8eb\", \n    \"title\": \"hehe222\",\n    \"description\": \"dont foreget to check my To Do project\",\n    \"deadlineAt\": \"today at 18.00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:30000/todos/6490648ac787fffe1b8af8eb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30000",
+					"path": [
+						"todos",
+						"6490648ac787fffe1b8af8eb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
